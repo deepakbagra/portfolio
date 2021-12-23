@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <meta charset="UTF-8">    
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+               
+                    <div>DEEPAK SHARMA</div>
+                
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style="background-image:url(images/birthDayLogo.jpg)">
+
+                    </div>
+
+                    <div class="image-text-wrapper">
+                        <div class="subtitle">
+                            This is a react web application.
+                            <p>It calculates your age and birthday countdown.</p>
+                        </div>                        
+                        <a class="subtitle-link" href="https://findmyage.netlify.app/"
+                            target="_blank">Visit my App</a>                    
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style="background-image:url(images/aboutMe.jpg)">
+                    </div>
+                    <div class="image-text-wrapper">                        
+                        <div class="subtitle">
+                            </br></br><p>This is a short summary about me.</p>                                                                                
+                        </div>                        
+                            <a class="subtitle-link" href="./about.html">About Me</a>                            
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Social Media Links -->
+
+        <div class="social-links-wrapper">
+            <a href="https://www.facebook.com/deepak.sharma.jp/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://linkedin.com/in/DeepakSharma3409/" target="_blank" class="fa fa-linkedin-square"></a>
+            <a href="https://github.com/deepakbagra/" target="_blank" class="fa fa-github"></a>
+        </div>
+
+        <!-- Footer of the page -->
+        <div id="footer" class="footer">            
+            <script>
+                const d = new Date();
+                document.getElementById("footer").innerHTML = d.getFullYear();
+            </script> 
+            Copyright ©
+            | findmyage.netlify.app | All Rights Reserved.
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {            
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
