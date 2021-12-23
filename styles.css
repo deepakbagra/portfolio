@@ -139,7 +139,7 @@ font-family: "Lato", sans-serif;
 
 .image-text-wrapper .subtitle {   
     text-decoration: none;
-    font-size: 1.5vw; 
+    font-size: 1.5vh; 
     margin-bottom: 3%;   
 }
 
@@ -152,7 +152,7 @@ font-family: "Lato", sans-serif;
 @media screen and (max-width: 480px) {
     .image-text-wrapper .subtitle {   
         text-decoration: none;
-        font-size: 2.3vw; 
+        font-size: 2vh; 
         margin-bottom: 3%;   
     }
 }
@@ -160,7 +160,7 @@ font-family: "Lato", sans-serif;
 @media screen and (max-width: 480px) {
     .image-text-wrapper .subtitle-link {   
         text-decoration: none;
-        font-size: 2.7vw;
+        font-size: 2.5vh;
         color: rgb(17, 1, 1);
     }
 }
@@ -260,7 +260,7 @@ font-family: "Lato", sans-serif;
   @media screen and (max-width: 480px) {
     .fa {
         padding: 1.5%;
-        font-size: 3vw;
+        font-size: 2.6vh;
         width: 50px;
         text-align: center;
         text-decoration: none;
