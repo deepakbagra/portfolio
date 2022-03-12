@@ -6,6 +6,11 @@ This is my professional portfolio demostrating various projects I have developed
 - HTML
 - CSS
 
+## Features
+- Transitional Styled Design
+- Specific and Concise
+- Responsive User Interface
+
 ## Current Status
 - Maintenance
 
